@@ -3,13 +3,12 @@ title = "Welcome to your Page "
 date = "2019-08-12"
 draft = false
 pinned = false
-tags = ["Anleitung", "Lernblog"]
+tags = [""]
 image = "/img/1.jpg"
 description = "In diesem Artikel werden Möglichkeiten aufgezeigt für das Verfassen von Blogeinträgen."
 footnotes = "Ganz unten an der Seite können zum Beispiel Bildquellen angegeben werden. Dieser Text ist abgetrennt durch eine Linie und etwas kleiner."
 +++
-
-In diesem Test-Blogeintrag werden Möglichkeiten aufgezeigt für das Verfassen von Blogeinträgen.
+1. In diesem Test-Blogeintrag werden Möglichkeiten aufgezeigt für das Verfassen von Blogeinträgen.
 
 Tipp: Um diesen Blogartikel zu behalten, ohne ihn zu löschen, kann man den **Entwurfsmodus** einschalten.
 
@@ -49,19 +48,19 @@ Natürlich gibt es auch **fett** und _kursiv_.
 
 So sieht eine Liste aus:
 
-- Nam de isto magna dissensio est.
-- Mihi, inquam, qui te id ipsum rogavi?
-- Haec et tu ita posuisti, et verba vestra sunt.
-- Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia.
+* Nam de isto magna dissensio est.
+* Mihi, inquam, qui te id ipsum rogavi?
+* Haec et tu ita posuisti, et verba vestra sunt.
+* Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia.
 
 ## Nummerierte Liste
 
 Und so eine nummerierte Liste:
 
 1. Nam de isto magna dissensio est.
-1. Mihi, inquam, qui te id ipsum rogavi?
-1. Haec et tu ita posuisti, et verba vestra sunt.
-1. Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia.
+2. Mihi, inquam, qui te id ipsum rogavi?
+3. Haec et tu ita posuisti, et verba vestra sunt.
+4. Idem fecisset Epicurus, si sententiam hanc, quae nunc Hieronymi est, coniunxisset cum Aristippi vetere sententia.
 
 ## Bilder
 
@@ -83,7 +82,7 @@ Wenn bei einem Bild ein `ALT TEXT` erfasst wird, so wird dieser als Bilduntersch
 
 Eine Horizontale Linie kann man entweder durch ein `<hr>` einfügen oder indem man im `Markdown`-Modus drei Striche `---` einfügt. So sieht die Linie aus:
 
----
+- - -
 
 ## Code und Code-Blöcke
 
