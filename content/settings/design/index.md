@@ -1,7 +1,7 @@
 +++
 headless = true
 icon = "/img/4.jpeg"
-logo = "/img/6.jpg"
+logo = ""
 image = "/img/7.jpeg"
 color = ""
 +++
