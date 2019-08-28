@@ -1,11 +1,11 @@
 +++
-title = "Welcome to your Page "
-date = "2019-08-12"
+title = "#First Week# @HTML5@ "
+date = "2019-08-14"
 draft = false
-pinned = false
-tags = [""]
-image = "/img/1.jpg"
-description = "In diesem Artikel werden Möglichkeiten aufgezeigt für das Verfassen von Blogeinträgen."
+pinned = true
+tags = ["1. # HTML."]
+image = "/img/html5.jpg"
+description = "#HTML#\nWhat is HTML?\nHTML stands for HyperText Markup Language. \nUnlike scripting or programming language that uses scripts to perform functions, a markup language uses tags to identify content. The ability to code using HTML is essential for any web professional. Acquiring this skill should be the starting point for anyone who is learning how to create content for the web. \n "
 footnotes = "Ganz unten an der Seite können zum Beispiel Bildquellen angegeben werden. Dieser Text ist abgetrennt durch eine Linie und etwas kleiner."
 +++
 1. In diesem Test-Blogeintrag werden Möglichkeiten aufgezeigt für das Verfassen von Blogeinträgen.
@@ -65,8 +65,6 @@ Und so eine nummerierte Liste:
 ## Bilder
 
 Bilder werden mit dem `+`-Symbol eingefügt.
-
-![Der Alt-Text wird jeweils als Bildunterschrift angezeigt.](/img/default-image.png)
 
 **Empfehlung für Bilder**: Meist empfiehlt sich, ein Bild ganz zuoberst im `Inhalt`-Feld einzufügen. Zusätzlich sollte man dieses auch im `Bild`-Feld angeben, damit es in der Blogübersicht erscheint. 
 
