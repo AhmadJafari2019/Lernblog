@@ -1,8 +1,8 @@
 +++
 headless = true
-icon = "/img/4.jpeg"
-logo = ""
-image = "/img/7.jpeg"
+icon = "/img/icon.jpg"
+logo = "/img/icon.jpg"
+image = "/img/bg.png"
 color = ""
 +++
 
