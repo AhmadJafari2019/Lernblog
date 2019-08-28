@@ -15,8 +15,22 @@ onload = () => {
         timing.className = "stl";
     }
     setInterval(now);
+    let menuBtn = document.querySelector(".menu-btn");
+    let menu = document.querySelector(".menu");
+    let menuStatus = false;
+    menu.style.display = "none";
 
+    function menuToggle() {
+        if (menuStatus == true) {
+            menu.style.display = "";
+            menuStatus = false;
+        } else if (menuStatus == false) {
+            menu.style.display = "none";
+            menuStatus = true;
+        }
+    }
 
+    menuBtn.addEventListener("click", menuToggle);
 }
 
 let toggleNavStatus = false;
@@ -49,6 +63,10 @@ let toggleNav = function() {
         getSidebarUL.style.visibility = "hidden";
         toggleNavStatus = false;
     }
-
-
 }
+
+// Created by Ahmad
+
+// window.onload = () => {
+
+// };
