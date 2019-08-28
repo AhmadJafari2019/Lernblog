@@ -1,7 +1,7 @@
 +++
 headless = true
 title = "Ahmad"
-description = "As soon as Possible, will write something."
+description = "Coding Lern Blog "
 footerLeft = "* _**ahmadlernblog.netfly.com**_"
 footerRight = ""
 +++
