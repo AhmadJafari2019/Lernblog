@@ -2,7 +2,7 @@
 headless = true
 icon = "/img/icon.jpg"
 logo = "/img/icon.jpg"
-image = "/img/bg.png"
+image = "/img/1.jpg"
 color = ""
 +++
 
