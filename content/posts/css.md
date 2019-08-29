@@ -1,5 +1,5 @@
 +++
-title = "CSS "
+title = "CSS Animation"
 date = "2019-08-15"
 draft = false
 pinned = false
