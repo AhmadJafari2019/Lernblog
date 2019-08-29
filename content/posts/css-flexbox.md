@@ -31,8 +31,8 @@ The flex container becomes flexible by setting the display to flex.
 * order => Specifies the order of the flex items, which flex item can be the first, the second and so on. The order value must be a number.
 * flex-grow=> Specifies how much a flex item will grow relative to the rest of the flex items. The value is a number.
 * flex-shrink => Specifies how much a flex item will shrink relative to the rest of the flex items. Value is a number and default value is one.
-* flex-basis = > Specifies the initial length of a flex item(one of the child element <div style="flex-basis: 200px">3</div>)
-* flex => Is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties(one of the child element <div style="flex: 0 0 200px">3</div>)
+* flex-basis = > Specifies the initial length of a flex item(one of the child element `<div style="flex-basis: 200px">3</div>`)
+* flex => Is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties(one of the child element `<div style="flex: 0 0 200px">3</div>`)
 * align-self =>Specifies the alignment for the selected item inside the flexible container. 
 
 Example for FlexBox:
