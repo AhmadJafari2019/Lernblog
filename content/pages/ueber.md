@@ -1,7 +1,7 @@
 +++
 title = "Über mich"
 draft = false
-image = ""
+image = "/img/ahmad-web.jpg"
 description = ""
 +++
 ![](/img/ahmad-web.jpg "Frontend Developer")
