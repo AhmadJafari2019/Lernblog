@@ -4,7 +4,7 @@ date = "2019-08-15"
 draft = false
 pinned = false
 tags = ["2. CSS"]
-image = "/img/css.jpg"
+image = "/img/111.png"
 description = "What is CSS?\n"
 +++
 CSS stands for Cascading Style Sheets.
