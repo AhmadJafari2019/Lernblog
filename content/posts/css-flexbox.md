@@ -6,6 +6,7 @@ pinned = false
 tags = ["CSS"]
 image = "/img/111.png"
 description = "# FlexBox  # Makes the design easier and responsive without using position and float."
+footnotes = "FlexBox is Amazing and easy to learn."
 +++
 # FlexBox Elements
 
@@ -41,3 +42,7 @@ Example for FlexBox:
 ![The HTML Picture](/img/screen-shot-2019-08-30-at-01.26.37.png)
 
 ![The result of The last Code.](/img/screen-shot-2019-08-30-at-01.27.08.png)
+
+That is the Website example, Which i work on it with FlexBox.
+
+![FlexBox example web.](/img/screen-shot-2019-08-30-at-01.21.23.png)
