@@ -5,7 +5,7 @@ draft = false
 pinned = false
 tags = ["HTML"]
 image = "/img/2.jpg"
-description = "HTML Graphics =>\nHTML Canvas\nHTML SVG"
+description = "HTML Graphics "
 +++
 HTML CANVAS:
 
