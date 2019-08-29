@@ -1,5 +1,5 @@
 +++
-title = "HTML"
+title = "HTML Graphics"
 date = "2019-08-14"
 draft = false
 pinned = false
