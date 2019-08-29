@@ -34,10 +34,10 @@ The flex container becomes flexible by setting the display to flex.
 * flex => Is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties(one of the child element <div style="flex: 0 0 200px">3</div>)
 * align-self =>Specifies the alignment for the selected item inside the flexible container. 
 
-![The CSS Picture.](/img/screen-shot-2019-08-30-at-01.25.50.png)
-
-![The BOX from two Code.](/img/screen-shot-2019-08-30-at-01.27.08.png)
-
 Example for FlexBox:
 
+![The CSS Picture.](/img/screen-shot-2019-08-30-at-01.25.50.png)
+
 ![The HTML Picture](/img/screen-shot-2019-08-30-at-01.26.37.png)
+
+![The result of The last Code.](/img/screen-shot-2019-08-30-at-01.27.08.png)
