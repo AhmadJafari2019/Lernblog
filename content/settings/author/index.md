@@ -1,6 +1,6 @@
 +++
 headless = true
-name = "Ahmad"
+name = "Ahmad Jafari"
 image = "/img/kind7.jpg"
 email = "ahmad.jafari@powercoders.org"
 +++
