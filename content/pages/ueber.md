@@ -1,7 +1,7 @@
 +++
 title = "Über mich"
 draft = false
-image = "/img/ahmad-web.jpg"
+image = ""
 description = ""
 +++
 ![Ahmad Jafari](/img/ahmad-web.jpg "Frontend Developer")
