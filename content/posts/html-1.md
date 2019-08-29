@@ -14,3 +14,7 @@ HTML is the standard markup language for Web pages.
 HTML elements are the building blocks of HTML pages.
 
 HTML elements are represented by <> tags.
+
+The Basic code for HTML:
+
+![](/img/screen-shot-2019-08-29-at-14.13.50.png)
