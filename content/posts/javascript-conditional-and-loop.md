@@ -6,7 +6,7 @@ pinned = false
 tags = ["JavaScript"]
 image = "/img/j.png"
 description = "JavaScript is a server-side language."
-footnotes = "JavaScript is Amazing Tomorrow will continue to learn .more"
+footnotes = "JavaScript is Amazing Tomorrow will continue to learn more."
 +++
 # JavaScript
 
