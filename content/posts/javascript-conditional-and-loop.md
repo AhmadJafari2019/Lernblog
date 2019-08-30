@@ -35,9 +35,20 @@ let course = 1;   if (course == 1) {document.write("<h1>HTML Tutorial</h1>");}el
 
 The switch statement is used to perform different actions based on different conditions.
 
-```
-let day = 2;switch (day) {  case 1:  document.write("Monday");  break; case 2:  document.write("Tuesday") break; case 3:  document.write("Wednesday"); break; default:  document.write("Another day");} // Outputs "Tuesday"
-```
+`let day = 2;`\
+`switch (day) { `\
+` case 1: `\
+` document.write("Monday"); `\
+` break;`\
+` case 2: `\
+` document.write("Tuesday")`\
+` break;`\
+` case 3: `\
+` document.write("Wednesday");`\
+` break;`\
+` default: `\
+` document.write("Another day");`\
+`} // Outputs "Tuesday"`
 
 The switch expression is evaluated once. The value of the expression is compared with the values of each case. If there is a match, the associated block of code is executed.
 
