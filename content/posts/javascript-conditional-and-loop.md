@@ -3,6 +3,7 @@ title = "# JavaScript Conditional and Loop# "
 date = "2019-08-17"
 draft = false
 pinned = false
+tags = ["JavaScript"]
 image = "/img/j.png"
 description = "JavaScript is a server-side language."
 +++
