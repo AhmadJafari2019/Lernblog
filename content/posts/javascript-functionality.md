@@ -1,57 +1,101 @@
 +++
-title = "JavaScript functionality ):"
-date = "2019-08-19"
+title = "JavaScript functionality ): The sidebar."
+date = "2019-08-22"
 draft = false
 pinned = false
 tags = ["JavaScript"]
 image = "/img/j.png"
-description = "How to Print the Date and Time in Browser with js Code."
+description = "How to make a sidebar with javaScript.\n"
 footnotes = "I  am gonna make my life like a masterpiece with JavaScript."
 +++
-Today i want to study about the date and time and write  a function to print the Date and time in the Browser.
+Today i want to work on a sidebar Menu with JavaScript.  
 
-That is the basic HTML code which i add just the "p" tag and give it the id to use it for my function in the js file.
+That is the aside tag which i defined in the HTML Page and i give it the className = "nav-sidebar and inside it exist an unordered list. And i have as also another div with btn-toggle-nav class. I used an image in the style for toggle. The function is like that as i click the toggle menu it will open the sidebar and show us the sidebar menu. 
 
 `<!DOCTYPE html>`
 
 `<html>`
 
-`  <head>`
+`   <head>`
 
-`   <title>Page Title</title>`
+`    <title>Page Title</title>`
 
-`  </head>`
+`   </head>`
 
-`  <body>`
+`   <body>`
 
-`   <p id="tim"></p>`
+`      <div class="btn-toggle-nav" onclick="toggleNav()"></div>`
 
-`  </body>`
+`      <aside class="nav-sidebar">`
+
+`        <ul>`
+
+`            <li><span href="#">Some Projekts</span></li>`
+
+`            <li><a href="#">Making a Video Design</a></li>`
+
+`            <li><a href="#">Arrange the Work time</a></li>`
+
+`            <li><a href="#">Connenting to the Companies</a></li>`
+
+`            <li><a href="#">Just register the Advertise</a></li>`
+
+`        </ul>`
+
+`    </aside>`
+
+`   </body>`
 
 `</html>`
 
-` onload = () => {`
+The javaScript code for the sidebar are:
 
-`    let timing = document.getElementById("tim");`
+` let toggleNavStatus = false;`
 
-`    function now() {`
+`let toggleNav = function() {`
 
-`        var date = new Date();`
+`    let getSidebar = document.querySelector(".nav-sidebar");`
 
-`        let year = date.getFullYear();`
+`    let getSidebarUL = document.querySelector(".nav-sidebar ul");`
 
-`        let month = date.getMonth() + 1;`
+`    let getSidebarTitle = document.querySelector(".nav-sidebar span");`
 
-`        let day = date.getDate();`
+`    let getSidebarLinks = document.querySelectorAll(".nav-sidebar a");`
 
-`        let hour = date.getHours();`
+`    if (toggleNavStatus === false) {`
 
-`        let min = date.getMinutes();`
+`        getSidebarUL.style.visibility = "visible";`
 
-`        let sec = date.getSeconds();`
+`        getSidebar.style.width = "272px";`
 
-`        timing.innerHTML = day + "/" + month + "/" + year + " " + "**" + " " + hour + ":" + min + ":" + sec;}`
+`        getSidebarTitle.style.opacity = " 0.5";`
 
-`    setInterval(now);`
+`        let arrayLength = getSidebarLinks.length;`
 
-Here i used the onload event which occurs after the object has loaded, and i called the paragraph  with defining the variable of timing. I write the function of now() to access the date and time. At the end i used the setInterval() method to call the function. The result will be in the browser like : 19/08/2019 \*\* 17:40:25
+`        for (let i = 0; i < arrayLength; i++) {`
+
+`            getSidebarLinks[i].style.opacity = "1"; }`
+
+`        toggleNavStatus = true;`
+
+`    } else if (toggleNavStatus === true) {`
+
+`        getSidebar.style.width = "50px";`
+
+`        getSidebarTitle.style.opacity = " 0.5";`
+
+`        let arrayLength = getSidebarLinks.length;`
+
+`        for (let i = 0; i < arrayLength; i++) {`
+
+`            getSidebarLinks[i].style.opacity = "0";  }`
+
+`        getSidebarUL.style.visibility = "hidden";`
+
+`        toggleNavStatus = false;`
+
+`    }`
+
+`}`
+
+![The sidebar menu](/img/screen-shot-2019-09-02-at-02.43.44.png)
