@@ -1,57 +1,83 @@
 +++
 title = "JavaScript functionality ):"
-date = "2019-08-19"
+date = "2019-08-23"
 draft = false
 pinned = false
 tags = ["JavaScript"]
 image = "/img/j.png"
-description = "How to Print the Date and Time in Browser with js Code."
+description = "How to make a Menubar with JavaScript.\n"
 footnotes = "I  am gonna make my life like a masterpiece with JavaScript."
 +++
-Today i want to study about the date and time and write  a function to print the Date and time in the Browser.
-
-That is the basic HTML code which i add just the "p" tag and give it the id to use it for my function in the js file.
+Today i will write another code for Menubar with JavaScript. I used a link tag with class menu-btn for the Menu and a div with a class of menu which exist inside it an unordered list.
 
 `<!DOCTYPE html>`
 
 `<html>`
 
-`  <head>`
+` <head>`
 
 `   <title>Page Title</title>`
 
-`  </head>`
+` </head>`
 
-`  <body>`
+` <body>`
 
-`   <p id="tim"></p>`
+`  <a class="menu-btn" href="#">Menu</a>`
 
-`  </body>`
+`    <div class="menu">`
 
-`</html>`
+`        <ul>`
 
-` onload = () => {`
+`            <li><a href="#">This is link 1</a></li>`
 
-`    let timing = document.getElementById("tim");`
+`            <li><a href="#">This is link 2</a></li>`
 
-`    function now() {`
+`            <li><a href="#">This is link 3</a></li>`
 
-`        var date = new Date();`
+`            <li><a href="#">This is link 4</a></li>`
 
-`        let year = date.getFullYear();`
+`            <li><a href="#">This is link 5</a></li>`
 
-`        let month = date.getMonth() + 1;`
+`        </ul>`
 
-`        let day = date.getDate();`
+`    </div>`
 
-`        let hour = date.getHours();`
+` </body>`
 
-`        let min = date.getMinutes();`
+`</html> `
 
-`        let sec = date.getSeconds();`
+The JavaScript Code for the Menu bar are:
 
-`        timing.innerHTML = day + "/" + month + "/" + year + " " + "**" + " " + hour + ":" + min + ":" + sec;}`
+`onload = () => {`
 
-`    setInterval(now);`
+`    let menuBtn = document.querySelector(".menu-btn");`
 
-Here i used the onload event which occurs after the object has loaded, and i called the paragraph  with defining the variable of timing. I write the function of now() to access the date and time. At the end i used the setInterval() method to call the function. The result will be in the browser like : 19/08/2019 \*\* 17:40:25
+`    let menu = document.querySelector(".menu");`
+
+`    let menuStatus = false;`
+
+`    menu.style.display = "none";`
+
+`    function menuToggle() {`
+
+`        if (menuStatus == true) {`
+
+`            menu.style.display = "";`
+
+`            menuStatus = false;`
+
+`        } else if (menuStatus == false) {`
+
+`            menu.style.display = "none";`
+
+`            menuStatus = true;`
+
+`        }}`
+
+`    menuBtn.addEventListener("click", menuToggle);`
+
+`}} `
+
+That is the Pic of the Menubar.
+
+![The Menubar](/img/screen-shot-2019-09-02-at-03.10.28.png)
