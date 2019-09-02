@@ -81,3 +81,7 @@ The JavaScript Code for the Menu bar are:
 That is the Pic of the Menubar.
 
 ![The Menubar](/img/screen-shot-2019-09-02-at-03.10.28.png)
+
+In this two last days i work on functionality.  I create the date and Time function to print the date and time and two menubar, one in the right site and another in the left site of the Browser and as also i create a dropdown list with CSS, which i share the whole result of the Code by a picture from Browser.  
+
+![The Pic of the two sidebar and Print time.](/img/screen-shot-2019-09-02-at-03.19.34.png)
