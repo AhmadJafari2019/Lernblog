@@ -16,3 +16,23 @@ Example : SELECT id, name, address, state FROM customers ORDER BY name, id;
 It will takes the name and id, address and the state column from the customers Table and sort it first by the  name base on Alphabetically and after by id . 
 
 ![The customers Table selected via this query: SELECT id, name, address, state FROM customers ORDER BY name, id;](/img/screen-shot-2019-09-04-at-00.35.23.png)
+
+**Ascending and Descending in MySQL**. 
+
+DESC : It sorts from up to down . Example =>SELECT name, zip FROM customers ORDER BY zip DESC;
+
+It takes the name and zip from customers Table and ordered by zip from up to down.
+
+![DESC Result](/img/screen-shot-2019-09-04-at-00.49.38.png)
+
+ASC : It sorts from down to up. Example => SELECT name, zip FROM customers ORDER BY name ASC;
+
+It takes the name and zip from customers Table and sorted by name from down to up.
+
+![ASC Result](/img/screen-shot-2019-09-04-at-00.54.29.png)
+
+**Another Example for Sorting Result =>** SELECT name, id FROM customers ORDER BY name DESC LIMIT 3;
+
+It takes the name and id from the customers table and sorted by name from up to down (name from" z to  a " and number from big to small) for limit 3;
+
+![The image of DESC LIMIT 3;](/img/screen-shot-2019-09-04-at-01.03.11.png)
