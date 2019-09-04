@@ -52,3 +52,25 @@ An another example of filtering with using : SELECT name, state, id  FROM custom
 It takes the name and state and id from the customers table where the state is equal to CA and sorted by name and id.
 
 ![Example for filtering ](/img/screen-shot-2019-09-04-at-02.37.19.png)
+
+**Filtering with AND** and **OR** 
+
+An example with **OR**: SELECT id, name, state, city FROM customers WHERE state = 'CA' OR city = 'Hayward';
+
+![Image example with OR](/img/screen-shot-2019-09-04-at-03.04.06.png)
+
+An example with **And :** SELECT id, name, state, city FROM customers WHERE state = 'CA' AND city = 'Hayward';
+
+![Image example with AND](/img/screen-shot-2019-09-04-at-03.03.40.png)
+
+Another Example of **OR** and **AND** => SELECT id, name, state, city FROM customers WHERE id = 1 OR id = 5 AND state = 'CA';
+
+![The result  without using the Parentheses.](/img/screen-shot-2019-09-04-at-03.24.55.png)
+
+At this example we wanted the state CA but the result is get out two, the reason is because we did not use the Parentheses for two id.
+
+SELECT id, name, state, city FROM customers WHERE (id = 1 OR id = 5 )AND state = 'CA';
+
+![The result with using the Parentheses.](/img/screen-shot-2019-09-04-at-03.25.17.png)
+
+****
