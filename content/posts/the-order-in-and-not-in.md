@@ -35,3 +35,9 @@ Another Example of the filtering and searching the Data from the Database.
 It selects the name from the items table where the name like computer exist.
 
 ![The LIKE '%computer%' example.](/img/screen-shot-2019-09-05-at-03.22.16.png)
+
+SELECT id, city, address FROM customers WHERE city LIKE 'h%d';
+
+It selects the id, city and the address from customers table where the city begin with h and end with d.
+
+![The result WHERE city LIKE 'h%d';](/img/screen-shot-2019-09-05-at-03.29.30.png)
