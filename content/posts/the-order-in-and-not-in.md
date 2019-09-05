@@ -41,3 +41,13 @@ SELECT id, city, address FROM customers WHERE city LIKE 'h%d';
 It selects the id, city and the address from customers table where the city begin with h and end with d.
 
 ![The result WHERE city LIKE 'h%d';](/img/screen-shot-2019-09-05-at-03.29.30.png)
+
+**More About the searching**
+
+SELECT name FROM items WHERE name LIKE '_ boxes of frogs';
+
+It selects the name from items table. I used the under score for that, it should be space between names and under score and under score is only for single character but % Percentage is for everything. The results for both i share down.
+
+![The image with using the under score ](/img/screen-shot-2019-09-05-at-03.53.45.png)
+
+![The image from the result of Percentage. It includes everything. ](/img/screen-shot-2019-09-05-at-03.54.46.png)
