@@ -51,3 +51,35 @@ It selects the name from items table. I used the under score for that, it should
 ![The image with using the under score ](/img/screen-shot-2019-09-05-at-03.53.45.png)
 
 ![The image from the result of Percentage. It includes everything. ](/img/screen-shot-2019-09-05-at-03.54.46.png)
+
+## REGULAR EXPRESSTIONS
+
+SELECT name FROM items WHERE name REGEXP 'new';
+
+It selects the name from items where the new names word exist.
+
+![Image from the REGEXP for word new.](/img/screen-shot-2019-09-05-at-04.19.47.png)
+
+SELECT name FROM items WHERE name REGEXP'.boxes'
+
+The dot. shows us the single character which can be everything like space and number...
+
+The Top command select names from the items table where the box exist and before box should exist a single character. 
+
+![The result with a space character before the box word.](/img/screen-shot-2019-09-05-at-04.25.26.png)
+
+**Pip sign**
+
+SELECT name FROM items WHERE name REGEXP 'gold |car';
+
+It selects the name of gold and car from the items table we use  here the Pip sign.
+
+![The result with Pip sign.](/img/screen-shot-2019-09-05-at-04.32.20.png)
+
+**The Square brackets**
+
+SELECT name FROM items WHERE name REGEXP'\[1234567] boxes of frogs';
+
+It selects the name of data which are the character exist  inside the brackets .
+
+![The result with the Square brackets](/img/screen-shot-2019-09-05-at-04.42.25.png)
