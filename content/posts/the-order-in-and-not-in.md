@@ -80,6 +80,14 @@ It selects the name of gold and car from the items table we use  here the Pip si
 
 SELECT name FROM items WHERE name REGEXP'\[1234567] boxes of frogs';
 
-It selects the name of data which are the character exist  inside the brackets .
+It selects the name of data which are the character exist  inside the brackets . We can write from one number to another number like that too=> \[1-8].
 
 ![The result with the Square brackets](/img/screen-shot-2019-09-05-at-04.42.25.png)
+
+SELECT name FROM items WHERE name REGEXP'\[^1234567] boxes of frogs';
+
+The Top query command will not select the character of 1-7 ("^" => means NOT)even though the name of boxes of frogs existed. It takes the other character which is not in the Brackets and include the name of boxes of the frogs. 
+
+Example Picture:
+
+![The result with REGEXP [NOT ^ .....]](/img/screen-shot-2019-09-05-at-04.44.49.png)
