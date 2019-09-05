@@ -91,3 +91,19 @@ The Top query command will not select the character of 1-7 ("^" => means NOT)eve
 Example Picture:
 
 ![The result with REGEXP [NOT ^ .....]](/img/screen-shot-2019-09-05-at-04.44.49.png)
+
+**Making a new Columns** 
+
+**SELECT CONCAT (city, ' , '  , state) AS NEW_ADDRESS from customers =>**
+
+It selects the city and state and  join or concat them together and we give it the name of NEW_ADDRESS as a column name . The NEW_ADDRESS is our new column. 
+
+![The NEW_COLUMN](/img/screen-shot-2019-09-05-at-05.36.04.png)
+
+How to decrease the Value of the Database :
+
+SELECT name, cost, cost-1 AS Sell_Price from items LIMIT 10;
+
+It selects the name, cost from the items table and decrement the cost by one and save it as a new column of Sell_Price and limited to 10.
+
+![The result of new column of sell_price](/img/screen-shot-2019-09-05-at-05.47.35.png)
