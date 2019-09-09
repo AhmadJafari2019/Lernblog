@@ -1,68 +1,88 @@
 +++
-title = "MySQL"
-date = "2019-09-08"
+title = "Making a row in MySQL"
+date = "2019-09-09"
 draft = false
 pinned = false
 tags = ["MySQL"]
 image = "/img/sql.png"
-description = "The relationship between tables"
+description = ""
 +++
-**The relationship between tables**
+**Making a row in MySQL**
 
-SELECT customers.id, customers.name, items.cost, items.name FROM items, customers
+INSERT INTO items VALUES('101', 'NAME1', '9.99', '1', '0');
 
-WHERE customers.id = seller_id
+This command will create a new rows which called NAME1.
 
-ORDER BY customers.id
+OR 
 
-It choose the customers id and customers name from customers table and cost and name from items table and match the id with the seller_id if they are equal, it will order by customers id.
+INSERT INTO items(id, name, cost, seller_id, bids)
 
-![The result of relation between 2 tables](/img/screen-shot-2019-09-09-at-13.15.16.png)
+VALUES('102', 'NAME2', '8.99', '1', '0');
 
-Another Example of the relation between tables.
+![The image result from the last two Query for making a row.](/img/screen-shot-2019-09-09-at-16.24.03.png)
 
-SELECT i.seller_id, i.name, c.id 
+**Making multiple row in MySQL**
 
-FROM customers AS c, items AS i
+INSERT INTO items(id, name, cost, seller_id, bids) 
 
-WHERE seller_id = c.id
+VALUES('103', 'beef', '12.05', '1', '0'),
 
-![The relationship  between 2 tables](/img/screen-shot-2019-09-09-at-13.56.53.png)
+('104', 'chicken', '8.10', '1', '0'),
 
-**The OUTER JOIN order in MySQL**
+('105', 'Gell', '5', '1', '0');
 
-SELECT customers.name, items.name From customers
+That is a great way to make several rows together.
 
-LEFT OUTER JOIN items ON seller_id = customers.id
+![Several rows together with a query command.](/img/screen-shot-2019-09-09-at-16.49.34.png)
 
-The Command choose the names from two tables and join it together according to  seller_id = customers.id.
+**UPDATE and DELETE in MySQL**
 
-![The result with using the LETFT OUTER JOIN ON](/img/screen-shot-2019-09-09-at-14.15.03.png)
+UPDATE items SET name = "Chicken Fried Rice", bids = 66 WHERE id = 104;
 
-**UNION in MySQL**
+![The UPDATE result](/img/screen-shot-2019-09-09-at-17.04.11.png)
 
-When we want to join two order together, we use the UNION command.
+**DELETE:**
 
-SELECT name, cost, bids FROM items WHERE bids > 190 
+DELETE FROM items WHERE id = 106;
 
-UNION
+**Making a Table:**
 
-SELECT name, cost, bids FROM items WHERE cost > 1000;
+CREATE TABLE Users(id int, Username VARCHAR(30), Password VARCHAR(20), PRIMARY KEY(id));
 
-![The result with union order](/img/screen-shot-2019-09-09-at-14.28.40.png)
+It creates the users table which has three columns the id type is integer , Username type is VARCHAR  which can be everything and Password is also VARCHAR, 30 and 20 are the amount of Username and Password.
 
-**Searching Fulltext Word in MySQL**
+**Orders of NOT NULL and AUTO INCREMENT in MySQL**
 
-First we have to activate this command => ALTER TABLE items ADD FullText(name);
+CREATE TABLE Ali(
 
-SELECT name, cost FROM items WHERE MATCH(name) Against('baby ');
+id int NOT NULL AUTO_INCREMENT,
 
-![The result for Word baby.](/img/screen-shot-2019-09-09-at-15.24.01.png)
+\    Username VARCHAR(30)NOT NULL,
 
-Another Example for searching Full text  Word.
+\    Password VARCHAR(20) NOT NULL,
 
-SELECT name, cost FROM items WHERE MATCH(name) Against('baby -coat' IN BOOLEAN MODE);
+\    PRIMARY KEY(id)
 
+)
 
+It will creates the Ali table and id is not allow to be empty and will create the id automatically. when i inserted the value to this table,  i did not give the id, it creates the id automatically i give just the value of Username and Password.
 
-![The result with removing one items](/img/screen-shot-2019-09-09-at-15.27.32.png)
+**The Orders Alter Drop and Rename in MySQL.**
+
+ALTER TABLE Ali ADD column1 VARCHAR(10);
+
+It will creates the column1 in Ali table.
+
+![The result with ALTER ADD.](/img/screen-shot-2019-09-09-at-18.52.08.png)
+
+DROP:
+
+ALTER TABLE Ali DROP COLUMN column1; It will delete the column1 from table Ali.
+
+RENAME:
+
+RENAME TABLE Ali to ALEX; => It will rename the tables.
+
+DELETE:
+
+DROP TABLE ALEX; => It will delete the table ALEX.
