@@ -5,7 +5,7 @@ draft = false
 pinned = false
 tags = ["Java"]
 image = "/img/java.jpg"
-description = "Java is a modern language for developing."
+description = ""
 +++
 **Variables types** => Today i want to define different type of the Variable inside a class.
 
