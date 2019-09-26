@@ -1,6 +1,6 @@
 +++
 title = "Anonymouse classes"
-date = "2019-09-23"
+date = "2019-09-24"
 draft = false
 pinned = false
 tags = ["Java"]
