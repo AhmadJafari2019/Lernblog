@@ -88,3 +88,5 @@ Call the function in the main Method.
 `}`
 
 ![The image for the JFrame and the Button action.](/img/screen-shot-2019-10-02-at-16.57.50.png)
+
+![The Colorpicker after Button action performed.](/img/screen-shot-2019-10-02-at-16.58.11.png)
