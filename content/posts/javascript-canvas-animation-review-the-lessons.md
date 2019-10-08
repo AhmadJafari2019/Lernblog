@@ -8,55 +8,55 @@ image = "/img/j.png"
 +++
 **Canvas Animation**
 
-` var c = canvas .getContext('2d');`
+`var c = canvas .getContext('2d');`
 
 `function round(x, y, dx, dy, radiuse){`
 
-`  this.x = x;`
+`this.x = x;`
 
-`  this.y = y;`
+`this.y = y;`
 
-`  this.dx = dx;`
+`this.dx = dx;`
 
-`  this.dy= dy;`
+`this.dy= dy;`
 
-`  this.radiuse=radiuse;`
+`this.radiuse=radiuse;`
 
-`  this.draw = function(){`
+`this.draw = function(){`
 
-`   c.beginPath();`
+`c.beginPath();`
 
-`    c.strokeStyle = "blue";`
+`c.strokeStyle = "blue";`
 
-`    c.arc(this.x, this.y, this.radiuse, 0, Math.PI * 2, false);`
+`c.arc(this.x, this.y, this.radiuse, 0, Math.PI * 2, false);`
 
-`    c.stroke();`
+`c.stroke();`
 
-`    c.fill();`
+`c.fill();`
 
-`  };`
+`};`
 
-`  this.update = function(){`
+`this.update = function(){`
 
-`    if(this.x + this.radiuse > innerWidth || this.x - this.radiuse < 0){`
+`if(this.x + this.radiuse > innerWidth || this.x - this.radiuse < 0){`
 
-`        this.dx = -this.dx;`
+`this.dx = -this.dx;`
 
-`      }`
+`}`
 
-`    if(this.y + this.radiuse > innerHeight || this.y -this.radiuse < 0){`
+`if(this.y + this.radiuse > innerHeight || this.y -this.radiuse < 0){`
 
-`        this.dy = -this.dy;`
+`this.dy = -this.dy;`
 
-`  }`
+`}`
 
-`     this.x += this.dx;`
+`this.x += this.dx;`
 
-`      this.y +=this.dy;`
+`this.y +=this.dy;`
 
-`    this.draw();`
+`this.draw();`
 
-`  }`
+`}`
 
 `}`
 
@@ -64,38 +64,36 @@ image = "/img/j.png"
 
 `for(var i = 0; i < 100; i++){`
 
-`    var x = Math.random() * (innerWidth -radiuse * 2) + radiuse;`
+`var x = Math.random() * (innerWidth -radiuse * 2) + radiuse;`
 
-`    var y = Math.random() * (innerHeight -radiuse * 2 ) + radiuse;`
+`var y = Math.random() * (innerHeight -radiuse * 2 ) + radiuse;`
 
-`    var dx = Math.random() - 0.5 ;`
+`var dx = Math.random() - 0.5 ;`
 
-`    var dy = Math.random() - 0.5;`
+`var dy = Math.random() - 0.5;`
 
-`    var radiuse = 40;`
+`var radiuse = 40;`
 
-`    rundArray.push(new round(x, y, dx, dy, radiuse));`
+`rundArray.push(new round(x, y, dx, dy, radiuse));`
 
 `}`
 
 `function animate(){`
 
-`     requestAnimationFrame(animate);`
+`requestAnimationFrame(animate);`
 
-`    c.clearRect(0, 0, innerWidth, innerHeight);`
+`c.clearRect(0, 0, innerWidth, innerHeight);`
 
-`    for(var i = 0; i < rundArray.length; i++){`
+`for(var i = 0; i < rundArray.length; i++){`
 
-`      rundArray[i].update();`
+`rundArray[i].update();`
 
-`    }`
+`}`
 
 `}`
 
 `animate();`
 
 canvas is a very Amazing and Complex subject in javaScript.
-
-
 
 ![The image from the Canvas Animation.](/img/screen-shot-2019-10-08-at-14.42.41.png)
