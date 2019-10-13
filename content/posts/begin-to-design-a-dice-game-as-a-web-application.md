@@ -12,6 +12,4 @@ I want to design a dice game which will be played in a Web browser. I declared a
 
 For dice, i used several Image to show the number of the dice, which begin from one to six.  The Game will play between two players.
 
-
-
 ![The design image for dice game.](/img/screen-shot-2019-10-13-at-20.53.58.png)
